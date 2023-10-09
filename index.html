@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快狠準</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <div id="logo">
+            快狠準
+        </div>
+        
+        <h1 id="instructions">
+            由左邊的玩家開始，輪流完成任務，然後按下空白鍵。<br>
+            玩家如果選擇跳過任務，時間將扣減三十秒。<br>
+            時限先達至零秒的便是輸家。<br>
+        </h1>
+
+        <svg id="timers">
+            <circle class="timer" id="player1_timer" cx="15%" cy="50%"></circle>
+            <circle class="timer" id="player2_timer" cx="85%" cy="50%"></circle>
+            
+            <text class="timerText" id="player1_timerText" x="15%" y="52.5%"></text>
+            
+            <text class="timerText" id="player2_timerText" x="85%" y="52.5%"></text>
+        </svg>
+        
+        <div id="taskArea">
+            <h1 id="task"></h1>
+        </div>
+        
+        <div>
+            <button class="skipButton" id="skip1">跳過</button>
+            <button class="skipButton" id="skip2">跳過</button>
+        </div>
+    </main>
+	<script src="script.js"></script>
+  </body>
+</html>
